@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube URL and Pause",
+  "version": "1.0",
+  "description": "Grabs YouTube URL and pauses the video",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Paragraph Summarizer",
+    "version": "1.0",
+    "description": "Enables the extension with a keyboard command",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "commands": {
+      "modify_paragraph": {
+        "suggested_key": {
+          "default": "Ctrl+M" 
+        },
+        "description": "Enables the extension"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+    
+  }

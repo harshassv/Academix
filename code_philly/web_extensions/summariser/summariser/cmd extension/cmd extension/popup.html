@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBRX Extension</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="popup.js"></script>
+  <style>
+    /* Reduce the size of buttons */
+    /* Reduce the size of buttons */
+    .btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin: 5px; /* Add space between buttons */
+ margin-right: 60px !important;
+  display: inline-block; /* Display buttons horizontally */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid rgb(70, 192, 248); /* Temporary border for visualization */
+  width:100%
+}
+
+/* Custom button colors */
+.btn-summarize {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-explain {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-expand {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-funny {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-kid {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-professional {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-humor {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-shakespeare {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-story {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-bulletPoints {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-simple {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+.btn-technicalSimpler {
+  background-color: #87CEEB; 
+  color: white;
+}
+
+/* Hover effects */
+.btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Pressed effect */
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+  </style>
+  <!-- <script src="popup.js"></script> -->
+</head>
+<body>
+  <div class="container">
+    <table>
+      <tr>
+        <td><button id="summarize" class="btn btn-summarize">Summarize</button></td>
+        <td><button id="examples" class="btn btn-explain">examples</button></td>
+        <td><button id="humor" class="btn btn-humor">humor</button></td>
+        
+      </tr>
+      <tr>
+        <td><button id="funny" class="btn btn-funny">Funny</button></td>
+        <td><button id="kid" class="btn btn-kid">Kid</button></td>
+        <td><button id="shakespeare" class="btn btn-shakespeare">shakespeare</button></td>
+      </tr>
+
+      <tr>
+      <td><button id="professional" class="btn btn-professional">Professional</button></td>
+      <td><button id="expand" class="btn btn-expand">Expand</button></td>
+      <td><button id="story" class="btn btn-story">story</button></td>
+      </tr>
+
+      <tr>
+        <td><button id="bulletPoints" class="btn btn-bulletPoints">bullet-points</button></td>
+        <td><button id="simple" class="btn btn-simple">simple</button></td>
+        <td><button id="technicalSimpler" class="btn btn-technicalSimpler">technical-simpler</button></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>
